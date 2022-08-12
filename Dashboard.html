@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="brand-logo">
+            <img src="Icons/logo.jpg" alt="Company logo">
+        </div>
+        <ul>
+            <li><a href="#"><span>Dashboard</span></a> </li>
+            <li><a href="#"><span>Admin Control Panel</span></a></li>
+            <li><a href="#"><span>Inventory</span></a> </li>
+            <li><a href="#"><span>Sales</span></a> </li>
+            <br><br><br><br><br><br><br><br>
+            <li><img src="Icons/help-web-button.png" alt="">&nbsp; <span>Help</span></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="Icons/search.png" alt=""></button>
+                </div>
+                <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+                <div class="user">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Welcome</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Help</a>
+                            <a href="#">Sign Out</a>
+                        </div>
+                    </div>
+                    <div class="img-case">
+                        <img src="Icons/admin.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <a href="#">
+                            <h3>ADMIN CONTROL PANEL</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="#">
+                            <h2>SALES</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="#">
+                            <h3>INVENTORY</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content-2">
+                <div class="recent-sales">
+                    <div class="title">
+                        <h2>Recent Sales</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+
+                        </tr>
+                        <tr>
+                            <td>MICHELIN Pilot Street Radial 150/60 R17 M/C 66H Tube Less Tyre</td>
+                            <td>4000 pieces</td>
+                            <td>GHC 1,200</td>
+
+                        </tr>
+                        <tr>
+                            <td>225/60R18 PIRELLI Car Tyre</td>
+                            <td>800 pieces</td>
+                            <td>GHC 1,500</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="new-stock">
+                    <div class="title">
+                        <h2>Available stock</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Item</th>
+                            <th>Item code</th>
+                        </tr>
+                        <tr>
+                            <td>225/60R18 Firestone Car Tyre</td>
+                            <td>WJ77fkKL</td>
+                        </tr>
+                        <tr>
+                            <td>Britelite 12v 200ah AGM Deep Cycle Battery</td>
+                            <td>GK77SCNG</td>
+                        </tr>
+                        <tr>
+                            <td>Boliden 15 Plate Battery</td>
+                            <td>JG267b3P</td>
+                        </tr>
+                        <tr>
+                            <td>225/60R18 ARMSTRONG Car Tyre</td>
+                            <td>AA47bjY3</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html
